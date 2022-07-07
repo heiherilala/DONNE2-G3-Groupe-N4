@@ -32,3 +32,12 @@ Toute modification du readme se fera dans la branche **modif-readme**. Si c'es n
 
 Si il y a un problem lor de la manipulation duu readme, veuller consulté le site: [https://www.markdownguide.org/cheat-sheet/](https://www.markdownguide.org/cheat-sheet/)
 
+## Isertion Donnée
+
+Dans la finalité du projet, tout les insertion devront se trouvet dans une seule fchier SQL,
+
+Mais pour facilité notre travail d'equipe, chaque persone travailera sur un SQL, et sera atribuet a un taleau proprementdite.
+
+Vous pouriez inserer des données sur un tableau si l'une des conditions suivantes sont verifier:
+- le tableu ne posede pas de cles etrangere
+- tout les tabeaus des cles etrangere du tableau sont tous dejat rempli
