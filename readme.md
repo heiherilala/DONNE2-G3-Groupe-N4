@@ -44,6 +44,12 @@ Vous pouriez inserer des données sur un tableau si l'une des conditions suivant
 - le tableu ne posede pas de cles etrangere
 - tout les tabeaus des cles etrangere du tableau sont tous dejat rempli
 
+Pour la creation de tableau avec beaucoup trop de donee, vous devez utiliser des automatisations, comme sur [mockaroo](https://www.mockaroo.com)
+
+Si vous utiliser mockaroo, atenssion a avoir des donner suporté par postgresql, pour vous aidé vous pouvez utilisé:
+- Du Regexp ex: `'03'+/(2|3|4)-\d\d-\d\d\d-\d\d/.gen` (pour la creation de numero de telephone), aide dans [https://www.lucaswillems.com/fr/articles/25/tutoriel-pour-maitriser-les-expressions-regulieres](https://www.lucaswillems.com/fr/articles/25/tutoriel-pour-maitriser-les-expressions-regulieres)
+- Du code ruby pour modifier les donnée obtenue ex: `this.gsub(" ", "-").gsub("'", "''")` (pour remplaser les espaces et les apostrofe)
+
 ## Modifier ou ajouté des requets SELECT
 
 Tous les insertion de donnée  se feront sur la branshe **modif-select**
