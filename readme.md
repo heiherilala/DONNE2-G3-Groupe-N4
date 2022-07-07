@@ -34,6 +34,8 @@ Si il y a un problem lor de la manipulation duu readme, veuller consulté le sit
 
 ## Isertion Donnée
 
+Tous les insertion de donnée  se feront sur la branshe **modif-insert**
+
 Dans la finalité du projet, tout les insertion devront se trouvet dans une seule fchier SQL,
 
 Mais pour facilité notre travail d'equipe, chaque persone travailera sur un SQL, et sera atribuet a un taleau proprementdite.
@@ -41,3 +43,13 @@ Mais pour facilité notre travail d'equipe, chaque persone travailera sur un SQL
 Vous pouriez inserer des données sur un tableau si l'une des conditions suivantes sont verifier:
 - le tableu ne posede pas de cles etrangere
 - tout les tabeaus des cles etrangere du tableau sont tous dejat rempli
+
+## Modifier ou ajouté des requets SELECT
+
+Tous les insertion de donnée  se feront sur la branshe **modif-select**
+
+Chaque requetes se plaserons dans une seule fichier sql.
+
+Le titre des fichier devrons etre explicite, et dans chaque fichier, un commentaire qui explique en delaille le fonctionement du code devra etre presant au debut
+
+# Menbres de l'equipe
