@@ -1,5 +1,5 @@
 --\i D:HEI/GitHub/DONNE2-G3-Ggroupe-N4/insertion.sql
-
+/*
 ALTER TABLE offre ADD nom_offre varchar(50) not null;
 
 INSERT INTO type_payement(type_payement) VALUES('airtel_money'),('mvola'),('orange_money'),('carte'),('espece');
@@ -592,3 +592,80 @@ insert into client (nom, prenom, telephone, cin) values ('Fitiantsoa', 'Herizo',
 insert into client (nom, prenom, telephone, cin) values ('Harimanitra', 'Soafaniry', '032-37-160-50', '102-323-025-494');
 insert into client (nom, prenom, telephone, cin) values ('Mialitiana', 'Anjavidy', '032-37-404-14', '102-785-458-384');
 insert into client (nom, prenom, telephone, cin) values ('Soarimanga', 'Iarantsoa', '032-91-152-78', '102-026-576-842');
+*/
+
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('6477ZLC', true, 1);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('8237QSY', true, 1);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('6021LHN', false, 1);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('4822BXA', true, 2);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('2976IZV', false, 2);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('1769AHV', true, 2);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('9036KIA', true, 2);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('6975ZLY', true, 1);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('3159YGG', false, 2);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('3856FJU', false, 1);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('2322SNO', true, 2);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('0246XPN', true, 3);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('1001QNO', false, 2);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('4556CAE', false, 2);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('6255YRF', true, 1);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('5394HNH', true, 2);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('1281RRQ', true, 3);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('6051COM', true, 1);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('4909WUK', false, 1);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('6974CDR', true, 3);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('4230CCC', true, 2);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('7635VGO', true, 2);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('6817SGM', true, 2);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('6543GRK', true, 3);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('9270WWF', true, 1);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('4323WLD', true, 3);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('9680AOS', true, 3);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('7761TCA', false, 3);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('0260MHR', true, 1);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('7351CIS', true, 3);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('2422JZT', true, 2);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('9302VLQ', true, 1);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('2271HTC', true, 1);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('6854GPM', true, 1);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('0259SUE', true, 3);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('5369JFX', true, 2);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('1521CBM', false, 1);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('6235EUZ', true, 1);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('8113IAB', true, 1);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('6620PAT', true, 2);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('5304FEC', true, 3);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('8962UZG', true, 3);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('2043UAS', false, 3);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('0520KTY', true, 2);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('8814LLN', true, 2);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('7544KCZ', true, 1);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('6943HON', true, 1);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('4209UHK', true, 3);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('9700RLZ', true, 2);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('0020TFC', false, 1);
+
+
+INSERT INTO incident(description_incident,depense_incident) VALUES
+('Empanne avec sur la route RN2, le moteur ne marche plus. Une autre voiture a dû prendre les passagers',200000),
+('Accident de voiture avec un camion BEN, 3 passagers blessés',5000000),
+('Le far droit ne marche plus, remplacement d’’ampoule laid',562000),
+('Passager malade durant le voyage, le voiture a du l’’emmener a l’optimale',100000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
