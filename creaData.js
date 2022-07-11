@@ -33,12 +33,15 @@ const josnoTooSql = (tabelNam, data)=>{
 const laterDate = (date)=>{
     let arrayDate = date.split('')
     arrayDate[8] = Math.round(Math.random()*(Number(arrayDate[8])))
-    arrayDate[9] = Math.max(Math.round(Math.random()*(Number(arrayDate[9]))),1) 
+    if (arrayDate[8]==0) {
+        arrayDate[9] = Math.max(Math.round(Math.random()*(Number(arrayDate[9]))),1) 
+    }else{
+        arrayDate[9] = Math.round(Math.random()*(Number(arrayDate[9])))
+    }
     return ""+arrayDate[0]+arrayDate[1]+arrayDate[2]+arrayDate[3]+arrayDate[4]+arrayDate[5]+arrayDate[6]+arrayDate[7]+arrayDate[8]+arrayDate[9];
 }
 
 
-console.log(laterDate("2022-01-25"));
 
 let chauffeur_soavadia = [
     {"id_chauffeur":1,"nom_chauffeur":"Valintiana","prenom_chauffeur":"Mendrikay","adresse_chauffeur":"imerintsiatosika","cin_chauffeur":"102-251-730-404","telephone_chauffeur":"033-32-649-59","salaire_chauffeur":550000},
@@ -1502,7 +1505,7 @@ let payement_soavadia = [];
 let reservation_soavadia = [];
 
 let j = 0;
-const numberClient = client_soavadia.length;
+const numberClient = client_soavadia.length-1;
 const numberResepsionist = receptionniste_soavadia.length-1;
 
 for(i=0; i<voyage_soavadia.length; i++){
