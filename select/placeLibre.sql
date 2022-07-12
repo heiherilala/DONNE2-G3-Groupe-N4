@@ -14,7 +14,4 @@ offre.id_offre = voiture.id_offre;
 Select numero_place  from reservation 
 where id_voyage=155;
 
---les place liblre sont tout les place qui ne se trouve pas dans dans les places prises
-
---Select numero_place, reservation.id_client, client.prenom  from reservation,
--- client where id_voyage=100 and  reservation.id_client = client.id_client
+--les place liblre sont tout les place qui ne se trouve pas dans les places prises
