@@ -1,4 +1,4 @@
--- prix du voyage N°12 avec coefficient offre et coefficient saison
+-- prix du voyage (ici N°12) avec coefficient offre et coefficient saison
 
 Select saison.coef_saison, offre.coef_offre, trajet.frais_de_base,
  saison.coef_saison * offre.coef_offre * trajet.frais_de_base frai_trajet_total,
