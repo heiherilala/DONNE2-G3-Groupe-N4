@@ -18,7 +18,7 @@ INSERT INTO saison(evenement,coef_saison) VALUES('basse_saison',1),('haute_saiso
 
 
 
-INSERT INTO offre(nombre_place,coef_offre,label_offre) VALUES(15,1,'normal'),(12,1.2,'premium'),(8,1.5,'vip');
+INSERT INTO offre(nombre_place,coef_offre,label_offre) VALUES(15 , 1 , 'normal'),(12 , 1.2 ,'premium'),(8 , 1.5 , 'vip');
 
 
 INSERT INTO incident(description_incident,depense_incident) VALUES
