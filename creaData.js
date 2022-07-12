@@ -4,6 +4,19 @@ const secondNameBase = [];
 const fisrtNameBase = [];
 const contryDase = [];
 
+
+/*
+let iiii = ["wfv,gse,tg","qzgr,qergq,etgq","qrgqr,gqerg,qreg"]
+let t="";
+for (let i = 0; i < iiii.length; i++) {
+    t=t+iiii[i]+"\n"
+}
+*/
+
+
+
+
+
 const josnoTooSql = (tabelNam, data)=>{
     let stringValue="";
     const longeur = data.length;
@@ -1516,6 +1529,7 @@ for(i=0; i<voyage_soavadia.length; i++){
                 id_reservation: j+1,
                 date_reservation:laterDate(voyage_soavadia[i].date_depart),
                 en_ligne:(Math.random()<0.4?false:true),
+                numero_place:k+1,
                 id_client:Math.round(Math.random()*numberClient+1),
                 id_voyage:i+1,
                 id_receptionniste:Math.round(Math.random()*numberResepsionist+1)
@@ -1523,10 +1537,14 @@ for(i=0; i<voyage_soavadia.length; i++){
             j++;
         }
     }else if (voiture_soavadia[idVoiture].id_offre==2) {
-        for (let k = 0; k < 6; k++) {
-            reservation_soavadia[j]={id_reservation: j+1,date_reservation:laterDate(voyage_soavadia[i].date_depart),
-                en_ligne:(Math.random()<0.4?false:true),id_client:Math.round(Math.random()*numberClient+1),
-                id_voyage:i+1,id_receptionniste:Math.round(Math.random()*numberResepsionist+1)
+        for (let k = 0; k < 12; k++) {
+            reservation_soavadia[j]={
+                id_reservation: j+1,date_reservation:laterDate(voyage_soavadia[i].date_depart),
+                en_ligne:(Math.random()<0.4?false:true),
+                numero_place:k+1,
+                id_client:Math.round(Math.random()*numberClient+1),
+                id_voyage:i+1,
+                id_receptionniste:Math.round(Math.random()*numberResepsionist+1)
             };
             j++;
         }
@@ -1536,6 +1554,7 @@ for(i=0; i<voyage_soavadia.length; i++){
                 id_reservation: j+1,
                 date_reservation:laterDate(voyage_soavadia[i].date_depart),
                 en_ligne:(Math.random()<0.4?false:true),
+                numero_place:k+1,
                 id_client:Math.round(Math.random()*numberClient+1),
                 id_voyage:i+1,
                 id_receptionniste:Math.round(Math.random()*numberResepsionist+1)
