@@ -3,7 +3,7 @@
 
 -- nombre de place du voyage N°15:
 
-Select voyage.id_voiture, offre.nombre_place from voyage, voiture, offre where 
+Select voiture.immatriculation, offre.nombre_place from voyage, voiture, offre where 
 voyage.id_voiture=voiture.id_voiture and 
 voyage.id_voyage = 15 and 
 offre.id_offre = voiture.id_offre;
