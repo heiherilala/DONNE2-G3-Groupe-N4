@@ -34,7 +34,7 @@ S'il y a un problème lors de la manipulation du readme, veuiller consulter le s
 
 ## Insertion Donnée
 
-Tous les insertion de donnée  se feront sur la branshe **modif-insert**
+Toutes les insertions de donnée  se feront sur la branshe **modif-insert**
 
 Dans la finalité du projet, toutes les insertions devront se trouvées dans une seule fichier SQL,
 
