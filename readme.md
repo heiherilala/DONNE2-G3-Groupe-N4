@@ -54,8 +54,15 @@ Si vous utiliser mockaroo, attention à avoir des données supportées par postg
 
 Tous les insertions de donnée se feront sur la branshe **modif-select**
 
-Chaque requêtes se plaseront dans un seul fichier sql.
+Chaque requêtes se placeront dans un seul fichier sql.
 
 Le titre des fichier devrait être explicite, et dans chaque fichier, un commentaire qui explique en détail ,le fonctionnement du code devra être présent au debut
 
 # Menbres de l'equipe
+<a href='https://github.com/heiherilala'>Ny Aina Herilala STD21108</a>
+
+<a href='https://github.com/KennyRandria'>Kenny Randria STD21088</a>
+
+<a href='https://github.com/Maheri29'>Maheriniaina STD21069</a>
+
+<a href='https://github.com/VOLABEMANANA'>Fabricia  STD21098</a>
