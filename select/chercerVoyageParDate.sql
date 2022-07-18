@@ -13,8 +13,8 @@ left join ville villeA on villeA.id_ville = trajet.id_ville_depart
 left join ville villeB on villeB.id_ville = trajet.id_ville_arrivee 
 
 where 
-trajet.id_ville_depart = 1 and
-trajet.id_ville_arrivee = 2 and
+villeA.nom_ville = 'Majunga' and
+villeB.nom_ville = 'Antananarivo' and
 date_depart = '2022-02-18'
 
 ;
