@@ -1,0 +1,7 @@
+--list des details paiement par un client --
+
+
+Select client.id_client, paiement.date ,paiement.montant,
+paiement.reste_a_payer,type_paiement.type_paiement,reservation.id_reservation
+,receptionniste.id_receptionniste 
+from client ,paiement ,type_paiement,reservation, receptionniste
