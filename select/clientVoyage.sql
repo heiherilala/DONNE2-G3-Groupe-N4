@@ -1,13 +1,15 @@
 --Lisete des client et leur place dans un voyage
 
-Select reservation.numero_place, client.prenom, 
-voyage.date_depart, voyage.horaire_depart, 
+Select numero_place, prenom, 
+date_depart, horaire_depart, 
 villeA.nom_ville ville_de_depart, villeB.nom_ville ville_d_arrivee 
-from reservation, client, ville villeA, ville villeB, trajet, voyage 
+from voyage 
+
+left join reservation on voyage.id_voyage = reservation.id_voyage
+left join trajet on trajet.id_trajet = voyage.id_trajet
+left join client on client.id_client = reservation.id_client
+left join ville villeA on villeA.id_ville = trajet.id_ville_depart
+left join ville villeB on villeB.id_ville = trajet.id_ville_arrivee
+
 where 
-reservation.id_voyage = 15 and 
-voyage.id_voyage = reservation.id_voyage and
-trajet.id_trajet = voyage.id_trajet and
-reservation.id_client = client.id_client and 
-villeA.id_ville = trajet.id_ville_depart and 
-villeB.id_ville = trajet.id_ville_arrivee;
+reservation.id_voyage = 15
