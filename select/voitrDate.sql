@@ -1,11 +1,14 @@
 --tous les véhicules qui ont participé à un voyage à une date précise ici '2022-01-18'.
 
-Select voiture.immatriculation, voyage.horaire_depart, 
+Select immatriculation, horaire_depart, 
 villeA.nom_ville ville_de_depart, villeB.nom_ville ville_d_arrivee 
-from voyage, voiture, ville villeA, ville villeB, trajet
+from voyage
+
+left join trajet on voyage.id_trajet = trajet.id_trajet 
+left join voiture on voyage.id_voiture = voiture.id_voiture
+left join ville villeA on villeA.id_ville = trajet.id_ville_depart
+left join ville villeB on villeB.id_ville = trajet.id_ville_arrivee
+
+
 where 
-voyage.id_voiture = voiture.id_voiture and 
-voyage.date_depart = '2022-01-18'and
-voyage.id_trajet = trajet.id_trajet and
-villeA.id_ville = trajet.id_ville_depart and
-villeB.id_ville = trajet.id_ville_arrivee;
+voyage.date_depart = '2022-01-18';
