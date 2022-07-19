@@ -1,4 +1,4 @@
--- Afficher les détails des reservations qui ne sont pas encore payées 
+-- Liste des reservations pas payées 
 select client.nom, client.prenom, 
 reservation.id_reservation, reservation.date_reservation, numero_place, 
 date_depart, horaire_depart,
@@ -16,3 +16,6 @@ inner join ville villeD on trajet.id_ville_depart = villeD.id_ville
 inner join ville villeA on trajet.id_ville_arrivee = villeA.id_ville
 
 where payement.payement_complet = false;
+
+
+liste des voyages et leurs destinations
