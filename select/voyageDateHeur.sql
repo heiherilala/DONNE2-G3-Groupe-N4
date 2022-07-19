@@ -1,4 +1,4 @@
--- Liste des voyages pour un trajet détérminée (tout temps confondu) trié par la date du voyage décroissant
+-- Afficher les listes des voyages à une horaire précise, à une date précise
 
 Select frais_de_base, date_depart, horaire_depart,
  coef_saison * coef_offre * frais_de_base frai_trajet_avec_coff,
@@ -14,8 +14,8 @@ left join ville villeA on villeA.id_ville = trajet.id_ville_depart
 left join ville villeB on villeB.id_ville = trajet.id_ville_arrivee
 
 where 
-trajet.id_trajet = 3
-
+voyage.date_depart = '2022-01-12' and
+voyage.horaire_depart = '08:00:00'
 order by date_depart DESC
 
 ;
