@@ -1,7 +1,7 @@
 --Liste des passagers qui sont partis de jour / de nuit à une date donnée
 
-Select numero_place, prenom, 
-nom, telephone,
+Select numero_place, prenom prenom_client, 
+nom nom_client, telephone,
 date_depart, horaire_depart, 
 villeA.nom_ville ville_de_depart, 
 villeB.nom_ville ville_d_arrivee 
