@@ -1,6 +1,6 @@
 --Afficher les voyages des 3 dernier mois 
 
-Select frais_de_base, date_depart, horaire_depart,
+Select chauffeur.nom_chauffeur, frais_de_base, date_depart, horaire_depart,
  coef_saison * coef_offre * frais_de_base frai_trajet_avec_coff,
  villeA.nom_ville ville_de_depart, villeB.nom_ville ville_d_arrivee 
 
